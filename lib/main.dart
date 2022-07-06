@@ -26,12 +26,16 @@ class _MyAppState extends State<MyApp> {
           secondary: Colors.red,
         ),
         fontFamily: 'Quicksand',
-        textTheme: ThemeData.light().textTheme.copyWith(
+        textTheme: ThemeData.light()
+            .textTheme
+            .copyWith(
               titleMedium: TextStyle(
                 fontFamily: 'OpenSans',
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
               ),
+            )
+            .copyWith(
               button: TextStyle(color: Colors.white),
             ),
         appBarTheme: AppBarTheme(
